@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌿Naturalife🌿</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<button onclick="toggleDarkMode()">
+    🌙 Modo Escuro
+</button>
+
+<h1>🧴 Cosméticos Recomendados</h1>
+
+<nav class="menu">
+    <a href="/">🏠 Início</a>
+    <a href="/cosmeticos">🧴 Cosméticos</a>
+    <a href="/receitas">🥤 Receitas</a>
+    <a href="/sobre">ℹ️ Sobre</a>
+</nav>
+
+    </a>
+</div>
+
+<div class="container">
+
+<a href="/hidratante">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/hidratante.jpg') }}">
+    <h2>Hidratante Facial</h2>
+    <p>Ajuda a manter a pele hidratada.</p>
+</div>
+
+</a>
+
+   <a href="/protetor">
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/protetor.jpg') }}">
+        <h2>Protetor Solar</h2>
+        <p>Protege a pele dos raios UV.</p>
+    </div>
+</a>
+
+<a href="/serum">
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/serum.jpg') }}">
+        <h2>Sérum Vitamina C</h2>
+        <p>Ajuda na luminosidade da pele.</p>
+    </div>
+</a>
+
+<a href="/sabonete">
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/sabonete.jpg') }}">
+<h2>Sabonete Facial</h2>
+<p>Ajuda na limpeza da pele.</p>
+</div>
+
+</a>
+
+<a href="/creme">
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/creme.jpg') }}">
+<h2>Creme Facial</h2>
+<p>Ajuda na hidratação.</p>
+</div>
+
+</a>
+
+<a href="/agua-micelar">
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/agua_micelar.jpg') }}">
+<h2>Água Micelar</h2>
+<p>Ajuda a limpar e refrescar.</p>
+</div>
+
+</a>
+
+<a href="/mascara">
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/mascara.jpg') }}">
+<h2>Máscara Facial</h2>
+<p>Auxilia no cuidado da pele.</p>
+</div>
+
+</a>
+
+<a href="/esfoliante">
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/esfoliante.jpg') }}">
+<h2>Esfoliante Facial</h2>
+<p>Ajuda a remover células mortas.</p>
+</div>
+
+</a>
+
+<a href="/gel-limpeza">
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/gel_limpeza.jpg') }}">
+<h2>🫧 Gel de Limpeza Facial</h2>
+<p>Ajuda a limpar a pele e remover impurezas.</p>
+</div>
+
+</a>
+
+</div>
+
+<script>
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
+    }
+}
+
+window.onload = function() {
+    if (localStorage.getItem("tema") == "escuro") {
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+
+</body>
+</html>

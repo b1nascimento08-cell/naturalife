@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sobre - NaturaLife</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="menu">
+    <a href="/">🏠 Início</a>
+    <a href="/cosmeticos">🧴 Cosméticos</a>
+    <a href="/receitas">🥤 Receitas</a>
+    <a href="/sobre">ℹ️ Sobre</a>
+</nav>
+
+<div class="detalhe">
+
+<h1>🌿 Sobre a NaturaLife</h1>
+
+<p>
+A <strong>NaturaLife</strong> é um projeto criado para ajudar as pessoas
+a conhecerem alimentos e cosméticos que podem contribuir para uma pele mais saudável.
+</p>
+
+<h2>🎯 Nosso objetivo</h2>
+
+<p>
+Reunir informações simples e confiáveis sobre alimentação, hidratação
+e cuidados com a pele, facilitando o aprendizado de qualquer pessoa.
+</p>
+
+<h2>💚 O que você encontra aqui?</h2>
+
+<ul>
+    <li>🥑 Alimentos que podem beneficiar a pele</li>
+    <li>🧴 Cosméticos e como utilizá-los</li>
+    <li>📚 Informações sobre vitaminas e nutrientes</li>
+    <li>✨ Dicas para cuidar melhor da pele</li>
+</ul>
+
+<div style="text-align:center; margin-top:30px;">
+    <a href="/" class="botao-hero">
+        ⬅ Voltar ao início
+    </a>
+</div>
+
+</div>
+
+<script>
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
+    }
+}
+
+window.onload = function() {
+    if (localStorage.getItem("tema") == "escuro") {
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+
+</body>
+</html>

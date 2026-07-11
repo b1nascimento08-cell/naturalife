@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Receitas Saudáveis - Natural Life</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="menu">
+    <a href="/">🏠 Início</a>
+    <a href="/cosmeticos">🧴 Cosméticos</a>
+    <a href="/receitas">🥤 Receitas</a>
+    <a href="/sobre">ℹ️ Sobre</a>
+</nav>
+
+<header class="logo">
+    <h1>🥤 Receitas Saudáveis</h1>
+    <p>Bebidas naturais que ajudam na saúde da pele.</p>
+</header>
+
+<div class="container">
+
+<a href="/vitamina-banana">
+<div class="card">
+<img src="{{ url_for('static', filename='images/vitamina_banana.jpg') }}">
+<h2>Vitamina de Banana</h2>
+<p>Energia e hidratação.</p>
+</div>
+</a>
+
+<a href="/vitamina-morango">
+<div class="card">
+<img src="{{ url_for('static', filename='images/vitamina_morango.jpg') }}">
+<h2>Vitamina de Morango</h2>
+<p>Rica em vitamina C.</p>
+</div>
+</a>
+
+<a href="/smoothie-manga">
+<div class="card">
+<img src="{{ url_for('static', filename='images/smoothie_manga.jpg') }}">
+<h2>Smoothie de Manga</h2>
+<p>Fonte de vitamina A.</p>
+</div>
+</a>
+
+<a href="/smoothie-kiwi">
+<div class="card">
+<img src="{{ url_for('static', filename='images/smoothie_kiwi.jpg') }}">
+<h2>Smoothie de Kiwi</h2>
+<p>Cheio de antioxidantes.</p>
+</div>
+</a>
+
+<a href="/vitamina-abacate">
+<div class="card">
+<img src="{{ url_for('static', filename='images/vitamina_abacate.jpg') }}">
+<h2>Vitamina de Abacate</h2>
+<p>Rica em gorduras saudáveis.</p>
+</div>
+</a>
+
+<a href="/suco-laranja-cenoura">
+<div class="card">
+<img src="{{ url_for('static', filename='images/suco_laranja_cenoura.jpg') }}">
+<h2>Suco de Laranja com Cenoura</h2>
+<p>Vitamina C e betacaroteno.</p>
+</div>
+</a>
+
+</div>
+
+</body>
+</html>

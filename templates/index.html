@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌿Naturalife🌿</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>🌿 Naturalife</h1>
+
+    <p>
+        Descubra os melhores alimentos e cosméticos
+        para manter sua pele bonita e saudável.
+    </p>
+
+    <a href="#cards" class="botao-hero">
+        Explorar
+    </a>
+</div>
+
+<nav class="menu">
+    <a href="/">🏠 Início</a>
+    <a href="/cosmeticos">🧴 Cosméticos</a>
+    <a href="/receitas">🥤 Receitas</a>
+    <a href="/sobre">ℹ️ Sobre</a>
+</nav>
+
+<header class="logo">
+    <h1>🌿 Natural Life</h1>
+    <p>Cuidados naturais para uma pele saudável</p>
+</header>
+
+<button onclick="toggleDarkMode()" class="dark-btn">
+    🌙 Modo Escuro
+</button>
+
+<div style="text-align:center; margin:20px;">
+    <input type="text" id="search" placeholder="Pesquisar alimentos..."
+        style="padding:10px; width:80%; max-width:400px; border-radius:10px; border:1px solid #ccc;">
+</div>
+
+    <p style="text-align:center;">
+        Alimentos e cosméticos para sua pele
+    </p>
+
+<div class="container" id="cards">
+
+   <a href="/abacate">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/abacate.jpg') }}">
+    <h2>Abacate</h2>
+    <p>Rico em vitamina E.</p>
+</div>
+
+</a>
+
+   <a href="/cenoura">
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/cenoura.jpg') }}">
+    <h2>cenoura</h2>
+    <p>ajuda na pele.</p>
+</div>
+
+</a>
+
+   <a href="/tomate">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/tomate.jpg') }}">
+    <h2>Tomate</h2>
+    <p>antioxidantes.</p>
+</div>
+
+</a>
+
+<a href="/laranja">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/laranja.jpg') }}">
+    <h2>Laranja</h2>
+    <p>Rica em vitamina C.</p>
+</div>
+
+</a>
+
+<a href="/morango">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/morango.jpg') }}">
+    <h2>Morango</h2>
+    <p>Rico em vitamina C e antioxidantes.</p>
+</div>
+
+</a>
+
+<a href="/kiwi">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/kiwi.jpg') }}">
+    <h2>Kiwi</h2>
+    <p>Cheio de vitamina C.</p>
+</div>
+
+</a>
+
+<a href="/mirtilo">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/mirtilo.jpg') }}">
+    <h2>Mirtilo</h2>
+    <p>Combate o envelhecimento da pele.</p>
+</div>
+
+</a>
+
+<a href="/uva">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/uva.jpg') }}">
+    <h2>Uva</h2>
+    <p>Rica em antioxidantes.</p>
+</div>
+
+</a>
+
+<a href="/manga">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/manga.jpg') }}">
+    <h2>manga</h2>
+    <p>Rica em vitamina A.</p>
+</div>
+
+</a>
+
+<a href="/banana">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/banana.jpg') }}">
+    <h2>banana</h2>
+    <p>Ajuda na hidratação da pele.</p>
+</div>
+
+</a>
+
+<a href="/brocolis">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/brocolis.jpg') }}">
+    <h2>Brocólis</h2>
+    <p>Rico em vitaminas e antioxidantes.</p>
+</div>
+
+</a>
+
+<a href="/castanhas">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/castanhas.jpg') }}">
+    <h2>castanhas</h2>
+    <p>Ricas em vitamina E.</p>
+</div>
+
+</a>
+
+<a href="/melancia">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/melancia.jpg') }}">
+    <h2>melancia</h2>
+    <p>Ajuda na hidratação da pele.</p>
+</div>
+
+</a><a href="/coco">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/coco.jpg') }}">
+    <h2>coco</h2>
+    <p>Hidratação e gorduras saudáveis.</p>
+</div>
+
+</a>
+
+<a href="/ovo">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/ovo.jpg') }}">
+    <h2>ovo</h2>
+    <p>Fonte de proteínas e vitaminas.</p>
+</div>
+
+</a>
+
+<a href="/salmao">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/salmao.jpg') }}">
+    <h2>Salmão</h2>
+    <p>Rico em ômega-3.</p>
+</div>
+
+</a>
+
+<a href="/espinafre">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/espinafre.jpg') }}">
+    <h2>Espinafre</h2>
+    <p>Rico em ferro e vitaminas.</p>
+</div>
+
+</a>
+
+<a href="/amendoas">
+
+<div class="card">
+    <img src="{{ url_for('static', filename='images/amendoas.jpg') }}">
+    <h2>Amêndoas</h2>
+    <p>Ricas em vitamina E.</p>
+</div>
+
+</a>
+
+</div>
+<script>
+const search = document.getElementById("search");
+const cards = document.querySelectorAll(".card");
+
+search.addEventListener("input", () => {
+    const value = search.value.toLowerCase();
+
+    cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+
+        card.style.display = text.includes(value)
+            ? "block"
+            : "none";
+    });
+});
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
+    }
+}
+
+window.onload = function() {
+    if (localStorage.getItem("tema") == "escuro") {
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+</body>
+</html>
+
